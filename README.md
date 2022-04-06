@@ -29,7 +29,10 @@ KcELECTRA-large | .884 | .912 |
 
 ## 3. 인용 방식
 ```
-Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classification : How Can Social Science Aid Developing Better Hate Speech Dataset?" arXiv preprint arXiv:0000.00000 (2022).```
+Kang, TaeYoung, et al.
+"Korean Online Hate Speech Dataset for Multilabel Classification : 
+How Can Social Science Aid Developing Better Hate Speech Dataset?" 
+arXiv preprint arXiv:0000.00000 (2022).```
 ```
 ```
 @misc{SmilegateAI2022KoreanUnSmileDataset,
