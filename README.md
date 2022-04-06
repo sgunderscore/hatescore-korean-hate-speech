@@ -1,6 +1,6 @@
 <img src = "https://github.com/sgunderscore/hatescore-korean-hate-speech/blob/main/rsc/zoomed_HateScore_transparent.png" width="75%">  
 
-**HateScore : Human-in-the-Loop Korean Multi-label Hate Speech Dataset (feat. Smilegate Unsmile Dataset)**  
+**HateScore : Human-in-the-Loop Korean Multi-label Hate Speech Dataset (feat. [Smilegate Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset))**  
 
 - 본 데이터는 SmilegateAI에서 공개한 1.8만 건의 [Korean Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)의 분류 모델을 기반으로 합니다.
 - 본 데이터의 크기는 약 1만 건으로, Unsmile base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 8천 건과 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건으로 구성됩니다.
