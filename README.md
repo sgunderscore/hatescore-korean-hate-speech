@@ -1,10 +1,10 @@
 <img src = "https://github.com/sgunderscore/hatescore-korean-hate-speech/blob/main/rsc/zoomed_HateScore_transparent.png" width="75%">  
 
-**Human-in-the-Loop Korean Multi-label Hate Speech Dataset (feat. Smilegate Unsmile Dataset)**  
+**HateScore : Human-in-the-Loop Korean Multi-label Hate Speech Dataset (feat. Smilegate Unsmile Dataset)**  
 
 - 본 데이터는 SmilegateAI에서 공개한 1.8만 건의 [Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)의 데이터 및 분류 모델을 기반으로 합니다.
-- 데이터 크기는 약 1만 건으로, HITL(Human-in-the-Loop) 방식으로 태깅된 8천 건과 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건으로 구성됩니다.
-- 언더스코어는 Smilegate Unsmile Dataset의 개발·레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다.
+- 본 데이터의 크기는 약 1만 건으로, Unsmile base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 8천 건과 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건으로 구성됩니다.
+- 언더스코어는 Smilegate Unsmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다.
 - 데이터 수집 및 레이블링 방식, 혐오발언 유형 선정 기준 등 보다 상세한 정보는 [이 논문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에서 확인하실 수 있습니다.
 
 ## 1. 예제 (KcBERT-base)
@@ -27,8 +27,39 @@ KcBERT-base | .886 | .914 |
 **KcBERT-large** | **.892** | **.919** |
 KcELECTRA-large | .884 | .912 |
 
-## 3.권장사항
+## 3. 인용 방식
+```
+Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classification : How Can Social Science Aid Developing Better Hate Speech Dataset?" arXiv preprint arXiv:0000.00000 (2022).```
+```
+```
+@misc{SmilegateAI2022KoreanUnSmileDataset,
+  title         = {HateScore: Human-in-the-Loop Korean Multi-label Hate Speech Dataset},
+  author        = {Underscore},
+  year          = {2022},
+  howpublished  = {\url{https://github.com/sgunderscore/hatescore-korean-hate-speech}},
+}
+```
+
+## 4.권장사항
 - 
 
-## 4.FAQ
+## 5.FAQ
 - 
+
+## 6. 프로젝트 참여 연구원
+- 강태영 (KAIST 경영공학 석사)
+- 권은낭 (연세대학교 사회학 박사과정)
+- 김학준 (서울대학교 사회학 석사)
+- 남영은 (Ph.D. candidate in Sociology at Purdue University)
+- 서정규 (Ph.D. candidate in Political Science at University of Houston)
+- 송준모 (연세대학교 사회학 박사과정)
+- 이준범 (서울대학교 데이터사이언스학 석사)
+
+**레이블링 추가**
+- 강태영 (KAIST 경영공학 석사)
+- 권은낭 (연세대학교 사회학 박사과정)
+- 김학준 (서울대학교 사회학 석사)
+- 남영은 (Ph.D. candidate in Sociology at Purdue University)
+- 서정규 (Ph.D. candidate in Political Science at University of Houston)
+- 송준모 (연세대학교 사회학 박사과정)
+- 이준범 (서울대학교 데이터사이언스학 석사)
