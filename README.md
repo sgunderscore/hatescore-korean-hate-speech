@@ -32,7 +32,7 @@ KcELECTRA-large | .884 | .912 |
 Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classification : How Can Social Science Aid Developing Better Hate Speech Dataset?" arXiv preprint arXiv:0000.00000 (2022).
 ```
 ```
-@misc{SmilegateAI2022KoreanUnSmileDataset,
+@misc{Underscore2022KoreanHateScoreDataset,
   title         = {HateScore: Human-in-the-Loop Korean Multi-label Hate Speech Dataset},
   author        = {Underscore},
   year          = {2022},
@@ -40,11 +40,17 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 }
 ```
 
-## 4.권장사항
-- 
+## 4. 권장사항
+- HateScore는 중립 문장을 포함하고 2021년도 하반기 이후의 댓글 데이터 역시 포함한다는 강점이 있으나, Unsmile과 달리 3인의 다수결 투표가 아닌 Human-in-the-loop 방식으로 '모델의 분류 확률'과 '연구원 한 명의 의견'의 두 가지 값만을 활용했습니다. 이에 응용 시에는 HateScore와 Unsmile 데이터를 함께 학습할 것을 권장합니다.
+- HateScore는 온라인 '댓글' 데이터만을 다룹니다. 그렇기에 "아까 학력 인증한 연베대게이다. 학점 ㅁㅌㅊ?"나 "페미니스트들의 실체.png"와 같은 웹 커뮤니티 제목 텍스트에 모델을 적용할 경우, 혐오발언 여부를 오분류할 가능성이 높습니다. 이에 댓글 텍스트에만 적용하는 것을 권장합니다.
+- 각 혐오발언 카테고리를 독립적으로 간주하지 않고, 멀티레이블(multi-label) 방식의 분류기 개발을 권장합니다.
+- 혐오발언 카테고리에 해당되지 않더라도 '단순 악플'에는 해당될 수 있으니 이에 유의해야 합니다.
 
-## 5.FAQ
-- 
+## 5. FAQ
+- 혐오발언 유형은 어떻게 되나요? → 아니요. 그렇지 않습니다.
+- 혐오발언 카테고리 별 데이터 수는 중요도와 비례하나요? → 아니요. 그렇지 않습니다.
+- 기타 혐오발언의 경우 어떤 내용을 포함하나요? → 외모에 대한 조롱, 특정 직업군에 대한 비하, 장애 희화화 등 
+- 왜 난민이나 중동 이민자 언급 중 ㅇ도 혐오발언인가요? → 아니요. 그렇지 않습니다.
 
 ## 6. 프로젝트 참여 연구원
 **혐오발언 유형 설정, 레이블링 매뉴얼 수립, 모델 개발**
@@ -64,3 +70,6 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 - 지소연 (서강대학교 사회학 석사)
 - 홍수민 (연세대학교 정치외교학 석사과정)
 - 황지영 (서강대학교 사회학 석사과정)
+
+## 7. 문의
+master@underscore.kr
