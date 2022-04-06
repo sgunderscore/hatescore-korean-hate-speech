@@ -2,7 +2,7 @@
 
 **HateScore : Human-in-the-Loop Korean Multi-label Hate Speech Dataset (feat. Smilegate Unsmile Dataset)**  
 
-- 본 데이터는 SmilegateAI에서 공개한 1.8만 건의 [Korean Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)의 데이터 및 분류 모델을 기반으로 합니다.
+- 본 데이터는 SmilegateAI에서 공개한 1.8만 건의 [Korean Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)의 분류 모델을 기반으로 합니다.
 - 본 데이터의 크기는 약 1만 건으로, Unsmile base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 8천 건과 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건으로 구성됩니다.
 - 언더스코어는 Smilegate Korean Unsmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다.
 - 데이터 수집 및 레이블링 방식, 혐오발언 유형 선정 기준 등 보다 상세한 정보는 [이 논문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에서 확인하실 수 있습니다.
@@ -28,9 +28,11 @@ KcBERT-base | .886 | .914 |
 KcELECTRA-large | .884 | .912 |
 
 ## 3. 인용 방식
+**논문**
 ```
 Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classification : How Can Social Science Aid Developing Better Hate Speech Dataset?" arXiv preprint arXiv:0000.00000 (2022).
 ```
+**깃헙(Github)**
 ```
 @misc{Underscore2022KoreanHateScoreDataset,
   title         = {HateScore: Human-in-the-Loop Korean Multi-label Hate Speech Dataset},
@@ -41,16 +43,17 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 ```
 
 ## 4. 권장사항
-- HateScore는 중립 문장을 포함하고 2021년도 하반기 이후의 댓글 데이터 역시 포함한다는 강점이 있으나, Unsmile과 달리 3인의 다수결 투표가 아닌 Human-in-the-loop 방식으로 '모델의 분류 확률'과 '연구원 한 명의 의견'의 두 가지 값만을 활용했습니다. 이에 응용 시에는 HateScore와 Unsmile 데이터를 함께 학습할 것을 권장합니다.
+- HateScore는 중립 문장을 포함하고 2021년도 하반기 이후의 댓글 데이터 역시 포함한다는 강점이 있으나, Unsmile과 달리 3인의 다수결 투표가 아닌 Human-in-the-loop 방식으로 '모델의 분류 확률'과 '연구원 한 명의 의견'의 두 가지 값만을 활용했습니다. 이에 응용 시에는 HateScore와 Unsmile 데이터를 함께 학습하는 것이 좋습니다.
 - HateScore는 온라인 '댓글' 데이터만을 다룹니다. 그렇기에 "아까 학력 인증한 연베대게이다. 학점 ㅁㅌㅊ?"나 "페미니스트들의 실체.png"와 같은 웹 커뮤니티 제목 텍스트에 모델을 적용할 경우, 혐오발언 여부를 오분류할 가능성이 높습니다. 이에 댓글 텍스트에만 적용하는 것을 권장합니다.
 - 각 혐오발언 카테고리를 독립적으로 간주하지 않고, 멀티레이블(multi-label) 방식의 분류기 개발을 권장합니다.
 - 혐오발언 카테고리에 해당되지 않더라도 '단순 악플'에는 해당될 수 있으니 이에 유의해야 합니다.
 
 ## 5. FAQ
-- 혐오발언 유형은 어떻게 되나요? → 아니요. 그렇지 않습니다.
+- 혐오발언 유형은 어떻게 되나요? → 여성, 성소수자, 지역, 인종/국적, 종교, 연령, 남성의 7가지 이며 기타 혐오발언, 단순 악플, 일반 댓글(clean)의 3가지 유형이 추가로 제공됩니다.
 - 혐오발언 카테고리 별 데이터 수는 중요도와 비례하나요? → 아니요. 그렇지 않습니다.
-- 기타 혐오발언의 경우 어떤 내용을 포함하나요? → 외모에 대한 조롱, 특정 직업군에 대한 비하, 장애 희화화 등 
-- 왜 난민이나 중동 이민자 언급 중 ㅇ도 혐오발언인가요? → 아니요. 그렇지 않습니다.
+- 기타 혐오발언의 경우 어떤 내용을 포함하나요? → 외모에 대한 조롱, 특정 직업군에 대한 비하, 장애 희화화 등 위 7가지 대분류에 포함되지 않는 혐오발언들이 이에 해당됩니다.
+- 기타 혐오발언은 7가지 유형보다 중요하지 않은가요? → 아니요. 그렇지 않습니다. 예산 및 시간의 제약으로 인해 우리 사회에 존재하는 모든 유형의 혐오발언에 대해 충분한 수의 데이터셋을 개발할 수는 없었습니다.
+- 왜 '남성'이 혐오발언의 유형 중 한 가지에 포함되어 있나요? → 아니요. 그렇지 않습니다.
 
 ## 6. 프로젝트 참여 연구원
 **혐오발언 유형 설정, 레이블링 매뉴얼 수립, 모델 개발**
