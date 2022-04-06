@@ -28,7 +28,7 @@ KcBERT-base | .886 | .914 |
 **KcBERT-large** | **.892** | **.919** |
 KcELECTRA-large | .884 | .912 |
   
-**Base Model 기준 비교 예제 ()**
+**Base Model 기준 비교 예제 (표 안의 값은 혐오발언 분류 확률)**
 혐오발언 분류 확률 | Unsmile | Unsmile+HateScore |
 --- | :---: | :---: |
 저 사람 중국인이네 | **0.87** | 0.20 |
