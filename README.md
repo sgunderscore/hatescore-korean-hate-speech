@@ -47,6 +47,7 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 - 
 
 ## 6. 프로젝트 참여 연구원
+**혐오발언 유형 설정, 레이블링 매뉴얼 수립, 모델 개발**
 - 강태영 (KAIST 경영공학 석사)
 - 권은낭 (연세대학교 사회학 박사과정)
 - 김학준 (서울대학교 사회학 석사)
@@ -56,10 +57,10 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 - 이준범 (서울대학교 데이터사이언스학 석사)
 
 **레이블링 보조참여자**
-- 강태영 (KAIST 경영공학 석사)
-- 권은낭 (연세대학교 사회학 박사과정)
-- 김학준 (서울대학교 사회학 석사)
-- 남영은 (Ph.D. candidate in Sociology at Purdue University)
-- 서정규 (Ph.D. candidate in Political Science at University of Houston)
-- 송준모 (연세대학교 사회학 박사과정)
-- 이준범 (서울대학교 데이터사이언스학 석사)
+- 권혜윤 (서울대학교 인류학 석사)
+- 박형준 (싱가포르국립대학교 심리학 석사)
+- 이보미 (서강대학교 정치외교학 석사)
+- 이성일 (서강대학교 사회학 석사)
+- 지소연 (서강대학교 사회학 석사)
+- 홍수민 (연세대학교 정치외교학 석사과정)
+- 황지영 (서강대학교 사회학 석사과정)
