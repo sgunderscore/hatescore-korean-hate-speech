@@ -1,6 +1,6 @@
 <img src = "https://github.com/sgunderscore/hatescore-korean-hate-speech/blob/main/rsc/zoomed_HateScore_transparent.png" width="75%">  
 
-**HateScore : Human-in-the-Loop Korean Multi-label Online Hate Speech Dataset (feat. [SmilegateAI UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset))**  
+**HateScore : Human-in-the-Loop and Neutral Korean Multi-label Online Hate Speech Dataset (feat. [SmilegateAI UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset))**  
 
 - 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://ojs.aaai.org/index.php/ICWSM/article/view/18059) 논문에서 활용한 데이터셋 중 보조 데이터셋 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
 - 본 데이터셋의 크기는 약 1.1만 건으로, Korean UnSmile Dataset의 base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 1.7천 건, 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건, 규칙 기반으로 생성된 중립 문장 7.1천 건의 세 가지로 구성되며 중립 문장 오분류 방지를 주 목적으로 개발되었습니다.
