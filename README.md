@@ -7,7 +7,7 @@
 - 언더스코어는 Smilegate Korean Unsmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다. 다만 이하의 '4.권장사항' 및 '5.FAQ' 항목에 작성된 내용은 Smilegate와는 별개로, 언더스코어가 독립적으로 작성한 의견입니다.
 - 데이터 수집 및 레이블링 방식, 혐오발언 유형 선정 기준 등 보다 상세한 정보는 [이 논문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에서 확인 가능하며, 본 데이터셋은 비영리·학술 목적의 활용을 전제로 공개되었습니다. 논문 내용에 대한 국문 요약은 [**여기**](https://minvv23.notion.site/Korean-Online-Hate-Speech-Dataset-for-Multilabel-Classification-Kang-TaeYoung-et-al-2022-8741bbf544d148339fa6e21842b3d6b8)서 보실 수 있습니다.
 
-## 1. 적용 예제 (KcBERT-base)
+## 1. 적용 예제 (KcBERT-base, Unsmile+HateScore)
 문장 | 여성 | 성소수자 | 남성 | 인종 | 지역 | 종교 | 연령 |
 --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: 
 여자는 집에서 애나 봐라 | **0.86** | 0.01 | 0.03 | 0.03 | 0.01 | 0.01 | 0.01 |
