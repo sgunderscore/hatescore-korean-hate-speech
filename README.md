@@ -2,7 +2,7 @@
 
 **HateScore : Human-in-the-Loop Korean Multi-label Online Hate Speech Dataset (feat. [Smilegate Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset))**  
 
-- 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://github.com/sgunderscore) 논문에서 활용한 데이터셋 중 보조 데이터셋 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
+- 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://ojs.aaai.org/index.php/ICWSM/article/view/18059) 논문에서 활용한 데이터셋 중 보조 데이터셋 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
 - 본 데이터셋의 크기는 약 1.1만 건으로, Korean UnSmile Dataset의 base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 1.7천 건, 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건, 규칙 기반으로 생성된 중립 문장 7.1천 건의 세 가지로 구성되며 중립 문장 오분류 방지를 주 목적으로 개발되었습니다.
 - 언더스코어는 Korean UnSmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다. 다만 이하의 '4.권장사항' 및 '5.FAQ' 항목에 작성된 내용은 SmilegateAI의 공식 입장과는 별개로 언더스코어가 작성한 독립적 의견입니다.
 - 데이터 수집 및 레이블링 방식, 혐오발언 유형 선정 기준 등 보다 상세한 정보는 [논문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에서 확인 가능하며, 국문 요약은 [**여기**](https://minvv23.notion.site/Korean-Online-Hate-Speech-Dataset-for-Multilabel-Classification-Kang-TaeYoung-et-al-2022-8741bbf544d148339fa6e21842b3d6b8)서 보실 수 있습니다.
@@ -96,7 +96,7 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 - 기타 혐오발언은 7가지 유형보다 중요하지 않은가요?  
 → 아니요. 그렇지 않습니다. 예산 및 시간의 제약으로 인해 우리 사회에 존재하는 모든 유형의 혐오발언에 대해 충분한 수의 데이터셋을 개발할 수는 없었습니다.
 - 왜 '남성'이 혐오발언의 유형 중 한 가지에 포함되어 있나요?  
-→ 물론 좁은 의미에서의 혐오발언은 사회적 소수자(social minority)에 대한 적대적 발언만을 지칭합니다. 다만 그럼에도 현실에서 규모가 빠르게 성장 중인 특정 유형의 악플을 아예 무시하는 역시 바람직하지는 않기에, '온라인' 악플·혐오발언을 주제로 하는 본 데이터셋의 특성 상 남성 카테고리를 포함시켰습니다. 즉, 실제 현실에서 여성에 대한 [경제적 차별](https://www.bbc.com/korean/international-49902936), [문화적 고정관념](https://www.yna.co.kr/view/AKR20191210057851004), [범죄 피해](https://www.hani.co.kr/arti/society/women/991129.html) 관련 문제가 여전히 존재하는 것과는 다소 독립적인 논의라고 판단했습니다. 이와 비슷하게 '종교' 카테고리에서도 국내 종교인구 1위를 기록하고 있는 개신교에 관한 적대적 발언들 역시 혐오발언으로 분류했습니다. 보다 상세한 논의는 앞서 소개한 [국문 논문 요약](https://minvv23.notion.site/Korean-Online-Hate-Speech-Dataset-for-Multilabel-Classification-Kang-TaeYoung-et-al-2022-8741bbf544d148339fa6e21842b3d6b8)에 작성되어 있습니다.
+→ 물론 좁은 의미에서의 혐오발언은 사회적 소수자(social minority)에 대한 적대적 발언만을 지칭합니다. 다만 그럼에도 현실에서 규모가 빠르게 성장 중인 특정 유형의 악플을 아예 무시하는 역시 바람직하지는 않기에, '온라인' 악플·혐오발언을 주제로 하는 본 데이터셋의 특성 상 남성 카테고리를 포함시켰습니다. 즉, 실제 현실에서 여성에 대한 [경제적 차별](https://www.bbc.com/korean/international-49902936), [문화적 고정관념](https://www.yna.co.kr/view/AKR20191210057851004), [범죄 피해](https://www.hani.co.kr/arti/society/women/991129.html) 관련 문제가 여전히 존재하는 것과는 다소 독립적인 논의라고 판단했습니다. 이와 비슷하게 '종교' 카테고리에서도 국내 종교인구 1위를 기록하고 있는 개신교에 관한 적대적 발언들 역시 혐오발언으로 분류했습니다. 보다 상세한 논의는 앞서 소개한 [국문 논문 요약](https://minvv23.notion.site/Korean-Online-Hate-Speech-Dataset-for-Multilabel-Classification-Kang-TaeYoung-et-al-2022-8741bbf544d148339fa6e21842b3d6b8) 및 [논문 본문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에 작성되어 있습니다.
 - 왜 '운지'나 '재기'와 같은 표현들은 혐오발언이 아닌 단순 악플로 분류되었나요?  
 → 모든 온라인 은어가 그러하듯 시간이 흐르면 초기의 의도와는 다른 방식으로 활용되고는 합니다. '운지'와 '재기'의 경우, 각각 노무현 전 대통령과 성재기 전 대표의 투신에 대한 조롱으로 시작되었으나 일정한 시간이 지난 현재에는 일베 및 워마드에서 하락, 감소, 추락, 죽음 등을 지칭하는 보다 포괄적인 은어로 활용됩니다. 가령 "왜 나스닥 운지하고 있노이기?"나 "요새 워념글 수 재기했노;;"와 같은 표현들이 사용될 때마다 발화자들이 매번 노무현과 성재기 두 명의 인물에 대한 공격을 의도하지는 않습니다. 물론 "홍어 틀딱들 코로나로 빨리들 운지했으면"이나 "젠신병자들 정병 걸려서 재기했으면 좋겠노"와 같이 여타 혐오 표현과 함께 활용될 경우에는 혐오발언으로 태깅하였습니다.
 
