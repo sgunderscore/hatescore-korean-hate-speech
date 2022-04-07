@@ -2,9 +2,9 @@
 
 **HateScore : Human-in-the-Loop Korean Multi-label Online Hate Speech Dataset (feat. [Smilegate Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset))**  
 
-- 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://github.com/sgunderscore) 논문에서 활용한 데이터셋 중 부가 데이터 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
-- 본 데이터셋의 크기는 약 1.1만 건으로, Korean Unsmile Dataset의 base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 1.7천 건, 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건, 규칙 기반으로 생성된 중립 문장 7.1천 건의 세 가지로 구성되며 중립 문장 오분류 방지를 주 목적으로 개발되었습니다.
-- 언더스코어는 Korean Unsmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다. 다만 이하의 '4.권장사항' 및 '5.FAQ' 항목에 작성된 내용은 SmilegateAI의 공식 입장과는 별개이며 언더스코어가 독립적으로 작성한 의견입니다.
+- 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://github.com/sgunderscore) 논문에서 활용한 데이터셋 중 부가 데이터 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
+- 본 데이터셋의 크기는 약 1.1만 건으로, Korean UnSmile Dataset의 base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 1.7천 건, 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건, 규칙 기반으로 생성된 중립 문장 7.1천 건의 세 가지로 구성되며 중립 문장 오분류 방지를 주 목적으로 개발되었습니다.
+- 언더스코어는 Korean UnSmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다. 다만 이하의 '4.권장사항' 및 '5.FAQ' 항목에 작성된 내용은 SmilegateAI의 공식 입장과는 별개이며 언더스코어가 독립적으로 작성한 의견입니다.
 - 데이터 수집 및 레이블링 방식, 혐오발언 유형 선정 기준 등 보다 상세한 정보는 [이 논문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에서 확인 가능하며, 국문 요약은 [**여기**](https://minvv23.notion.site/Korean-Online-Hate-Speech-Dataset-for-Multilabel-Classification-Kang-TaeYoung-et-al-2022-8741bbf544d148339fa6e21842b3d6b8)서 보실 수 있습니다.
 - 본 데이터셋은 비영리·학술 목적의 활용을 전제로 공개되었습니다.
 
@@ -81,9 +81,9 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
 ```
 
 ## 4. 권장사항
-- HateScore는 중립 문장을 포함하고 2021년도 하반기 이후의 댓글 데이터 역시 포함한다는 강점이 있으나, 3인의 다수결 투표로 최종 레이블을 결정한 Unsmile과 달리 Human-in-the-loop 방식으로 '모델의 분류 확률'과 '연구원 한 명의 의견'의 두 가지 값만을 활용했습니다. 이에 응용 시에는 HateScore와 Unsmile 데이터를 함께 학습하는 것이 좋습니다.
+- HateScore는 중립 문장을 포함하고 2021년도 하반기 이후의 댓글 데이터 역시 포함한다는 강점이 있으나, 3인의 다수결 투표로 최종 레이블을 결정한 UnSmile과 달리 Human-in-the-loop 방식으로 '모델의 분류 확률'과 '연구원 한 명의 의견'의 두 가지 값만을 활용했습니다. 이에 응용 시에는 HateScore와 UnSmile 데이터를 함께 학습하는 것이 좋습니다.
 - HateScore는 온라인 '댓글' 데이터만을 다룹니다. 그렇기에 "아까 학력 인증한 연베대게이다. 학점 ㅁㅌㅊ?"나 "페미니스트들의 실체.png"와 같은 웹 커뮤니티 제목 텍스트에 모델을 적용할 경우, 혐오발언 여부를 오분류할 가능성이 높습니다. 이에 댓글 텍스트에만 적용하는 것을 권장합니다.
-- 각 혐오발언 카테고리를 독립적으로 간주하지 않는 멀티레이블(multi-label) 방식의 분류기 개발을 권장합니다.
+- 각 혐오발언 카테고리를 독립적으로 간주하는 단순 분류기 대신 멀티레이블(multi-label) 방식의 분류기 개발을 권장합니다.
 - 입력한 텍스트가 혐오발언 카테고리에 해당되지 않더라도 '단순 악플'에는 해당될 수 있으니, 멀티레이블 분류기에서 주어진 댓글의 공격성을 단순히 "1-(Clean 분류 확률)"만으로 계산하는 것은 부적합합니다.
 
 ## 5. FAQ
