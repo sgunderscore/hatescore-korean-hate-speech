@@ -2,9 +2,9 @@
 
 **HateScore : Human-in-the-Loop Korean Multi-label Online Hate Speech Dataset (feat. [Smilegate Unsmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset))**  
 
-- 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://github.com/sgunderscore) 논문에서 활용한 데이터셋 중 부가 데이터 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
+- 본 깃헙 페이지는 [(Kang, Tayoung, et al., 2022)](https://github.com/sgunderscore) 논문에서 활용한 데이터셋 중 보조 데이터셋 1.1만건을 다룹니다. 논문의 메인 데이터셋인 [Korean UnSmile Dataset](https://github.com/smilegate-ai/korean_unsmile_dataset)은 Smilegate AI의 기획과 지원을 바탕으로 개발되었습니다.
 - 본 데이터셋의 크기는 약 1.1만 건으로, Korean UnSmile Dataset의 base model을 활용해 HITL(Human-in-the-Loop) 방식으로 태깅된 1.7천 건, 위키피디아에서 수집한 혐오 이슈 관련 중립 문장 2.2천 건, 규칙 기반으로 생성된 중립 문장 7.1천 건의 세 가지로 구성되며 중립 문장 오분류 방지를 주 목적으로 개발되었습니다.
-- 언더스코어는 Korean UnSmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다. 다만 이하의 '4.권장사항' 및 '5.FAQ' 항목에 작성된 내용은 SmilegateAI의 공식 입장과는 별개이며 언더스코어가 독립적으로 작성한 의견입니다.
+- 언더스코어는 Korean UnSmile Dataset의 개발과 레이블링 작업을 진행했으며, 본 HateScore 데이터셋 역시 당시의 참여 인원 및 레이블링 기준을 동일하게 유지했습니다. 다만 이하의 '4.권장사항' 및 '5.FAQ' 항목에 작성된 내용은 SmilegateAI의 공식 입장과는 별개로 언더스코어가 작성한 독립적 의견입니다.
 - 데이터 수집 및 레이블링 방식, 혐오발언 유형 선정 기준 등 보다 상세한 정보는 [이 논문](https://ojs.aaai.org/index.php/ICWSM/article/view/18059)에서 확인 가능하며, 국문 요약은 [**여기**](https://minvv23.notion.site/Korean-Online-Hate-Speech-Dataset-for-Multilabel-Classification-Kang-TaeYoung-et-al-2022-8741bbf544d148339fa6e21842b3d6b8)서 보실 수 있습니다.
 - 본 데이터셋은 비영리·학술 목적의 활용을 전제로 공개되었습니다.
 
