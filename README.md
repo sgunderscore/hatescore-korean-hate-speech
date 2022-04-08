@@ -68,9 +68,19 @@ KcELECTRA-large | .884 | .912 |
 ## 3. 인용 방식
 **논문**
 ```
-Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classification: How Can Social Science Improve Dataset on Hate Speech?." arXiv preprint arXiv:2204.03262 (2022).
+@misc{https://doi.org/10.48550/arxiv.2204.03262,
+  doi = {10.48550/ARXIV.2204.03262},
+  url = {https://arxiv.org/abs/2204.03262},
+  author = {Kang, TaeYoung and Kwon, Eunrang and Lee, Junbum and Nam, Youngeun and Song, Junmo and Suh, JeongKyu},
+  keywords = {Computation and Language (cs.CL), Computers and Society (cs.CY), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Korean Online Hate Speech Dataset for Multilabel Classification: How Can Social Science Aid Developing Better Hate Speech Dataset?},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
 ```
-**깃헙(Github)**
+
+<!-- **깃헙(Github)**
 ```
 @misc{Underscore2022KoreanHateScoreDataset,
   title         = {HateScore: Human-in-the-Loop Korean Multi-label Online Hate Speech Dataset},
@@ -78,7 +88,7 @@ Kang, TaeYoung, et al. "Korean Online Hate Speech Dataset for Multilabel Classif
   year          = {2022},
   howpublished  = {\url{https://github.com/sgunderscore/hatescore-korean-hate-speech}},
 }
-```
+``` -->
 
 ## 4. 권장사항
 - HateScore는 중립 문장을 포함하고 2021년도 하반기 이후의 댓글 데이터 역시 포함한다는 강점이 있으나, 3인의 다수결 투표로 최종 레이블을 결정한 UnSmile과 달리 Human-in-the-loop 방식으로 '모델의 분류 확률'과 '연구원 한 명의 의견'의 두 가지 값만을 활용했습니다. 이에 응용 시에는 HateScore와 UnSmile 데이터를 함께 학습하는 것이 좋습니다. [논문](https://arxiv.org/abs/2204.03262) 역시 이와 동일한 방식을 사용했습니다.
