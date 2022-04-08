@@ -116,7 +116,7 @@ KcELECTRA-large | .884 | .912 |
 - 권은낭 (연세대학교 사회학 박사과정)
 - 김학준 (서울대학교 사회학 석사)
 - 남영은 (Ph.D. candidate in Sociology at Purdue University)
-- 서정규 (Ph.D. candidate in Political Science at University of Houston)
+- 서정규 (Ph.D. student in Political Science at University of Houston)
 - 송준모 (연세대학교 사회학 박사과정)
 - 이준범 (서울대학교 데이터사이언스학 석사)
 
@@ -126,7 +126,7 @@ KcELECTRA-large | .884 | .912 |
 - 이보미 (서강대학교 정치외교학 석사)
 - 이성일 (서강대학교 사회학 석사)
 - 지소연 (서강대학교 사회학 석사)
-- 홍수민 (연세대학교 정치외교학 석사과정)
+- 홍수민 (연세대학교 정치외교학 석사)
 - 황지영 (서강대학교 사회학 석사과정)
 
 ## 7. 문의
