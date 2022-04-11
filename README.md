@@ -74,7 +74,7 @@ KcELECTRA-large | .884 | .912 |
   url = {https://arxiv.org/abs/2204.03262},
   author = {Kang, TaeYoung and Kwon, Eunrang and Lee, Junbum and Nam, Youngeun and Song, Junmo and Suh, JeongKyu},
   keywords = {Computation and Language (cs.CL), Computers and Society (cs.CY), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Korean Online Hate Speech Dataset for Multilabel Classification: How Can Social Science Aid Developing Better Hate Speech Dataset?},
+  title = {Korean Online Hate Speech Dataset for Multilabel Classification: How Can Social Science Improve Dataset on Hate Speech?},
   publisher = {arXiv},
   year = {2022},
   copyright = {arXiv.org perpetual, non-exclusive license}
